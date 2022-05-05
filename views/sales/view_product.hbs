@@ -1,0 +1,29 @@
+<div class="container-fluid">
+    <div class="row justify-content-center">
+        <input type="hidden" name="objectId" value="{{objectId}}"/>
+        <div class="col-5 text-left ">
+            <label class="col-form-label font-weight-bold" for="title">Title:  </label> {{saleTitle}}
+        </div>
+    </div>
+    <div class="row justify-content-center">
+        <div class="col-5 text-left ">
+            <label class="col-form-label font-weight-bold" for="name">Owner:  </label> {{saleCreatorName}}
+        </div>
+    </div>
+    <div class="row justify-content-center">
+        <div class="col-5 text-left ">
+            <label class="col-form-label font-weight-bold" for="price">Price:  </label> {{salePrice}}
+        </div>
+    </div>
+    <div class="row justify-content-center">
+        <div class="col-5 text-left">
+            <label class="col-form-label font-weight-bold" for="body">Description: </label> {{saleBody}}
+        </div>
+    </div>
+    <br/>
+    <div class="row justify-content-center">
+        <div class="col-5 text-left font-weight-bold">
+            <a class="btn btn-warning " id="orderButton" href="/sales/order_placed" type="submit">Place Order</a>
+        </div>
+    </div>
+</div>

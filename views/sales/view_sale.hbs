@@ -1,0 +1,30 @@
+<div class="container-fluid">
+    <div class="row justify-content-center">
+        <input type="hidden" name="objectId" value="{{objectId}}"/>
+        <div class="col-5 text-left ">
+            <label class="col-form-label font-weight-bold" for="title">Title:  </label> {{saleTitle}}
+        </div>
+    </div>
+    <div class="row justify-content-center">
+        <div class="col-5 text-left ">
+            <label class="col-form-label font-weight-bold" for="name">Owner:  </label> {{saleCreatorName}}
+        </div>
+    </div>
+    <div class="row justify-content-center">
+        <div class="col-5 text-left ">
+            <label class="col-form-label font-weight-bold" for="price">Price:  </label> {{salePrice}}
+        </div>
+    </div>
+    <div class="row justify-content-center">
+        <div class="col-5 text-left">
+            <label class="col-form-label font-weight-bold" for="body">Description: </label> {{saleBody}}
+        </div>
+    </div>
+    <br>
+    <div class="row justify-content-center">
+        <div class="col-5 text-left font-weight-bold">
+            <span><a class="btn btn-danger" role="button" aria-pressed="true" href="/sales/delete?id={{ objectId }}"><i data-feather="trash-2"></i> Delete Product</a></span>
+            <span><a class="btn btn-success" role="button" aria-pressed="true" href="/sales/edit?id={{ objectId }}"><i data-feather="edit"></i> Edit Product</a></span>
+        </div>
+    </div>
+</div>

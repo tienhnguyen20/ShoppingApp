@@ -1,0 +1,29 @@
+<div class="container-fluid">
+    <div class="container-fluid m-2">
+        {{>user_messages}}
+    </div>
+    <div class="row justify-content-center">
+        <input type="hidden" name="objectId" value="{{objectId}}"/>
+        <div class="col-5 text-left ">
+            <label class="col-form-label font-weight-bold" for="first">First Name:  </label> {{first}}
+        </div>
+    </div>
+    <div class="row justify-content-center">
+        <div class="col-5 text-left ">
+            <label class="col-form-label font-weight-bold" for="last">Last Name:  </label> {{last}}
+        </div>
+    </div>
+    <div class="row justify-content-center">
+        <div class="col-5 text-left ">
+            <label class="col-form-label font-weight-bold" for="email">Email:  </label> {{email}}
+        </div>
+    </div>
+    <br>
+    <div class="row justify-content-center">
+        <div class="col-5 text-left font-weight-bold">
+            <span><a class="btn btn-success" role="button" aria-pressed="true" href="/users/edit?id={{ objectId }}"><i data-feather="edit"></i> Edit Profile</a></span>
+        </div>
+    </div>
+</div>
+
+

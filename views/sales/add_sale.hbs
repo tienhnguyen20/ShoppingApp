@@ -1,0 +1,36 @@
+<form method="post" action="/sales/save">
+    <div class="container-fluid form-group">
+        <input type="hidden" name="saveMethod"
+               value="{{#if isCreate}}create{{else}}update{{/if}}"/>
+        <div class="form-group row justify-content-center">
+            <input type="hidden" name="objectId" value="{{objectId}}"/>
+        </div>
+        <div class="form-group row justify-content-center">
+            <div class="col-2 text-right font-weight-bold">
+                <label class="col-form-label" for="title" >Title:</label>
+            </div>
+            <div class="col-10">
+                <input class="form-control col-9 pull-right" type="text" required="required" name="title"/><br/>
+            </div>
+        </div>
+        <div class="form-group row justify-content-center">
+            <div class="col-2 text-right font-weight-bold">
+                <label class="col-form-label" for="price">Price ($):</label>
+            </div>
+            <div class="col-10">
+                <input class="form-control col-9 pull-right" required="required" name="price" type="number" min="0.00" step="0.01"/><br/>
+            </div>
+        </div>
+        <div class="form-group row justify-content-center">
+            <div class="col-2 text-right font-weight-bold">
+                <label class="col-form-label" for="body">Description:</label>
+            </div>
+            <div class="col-10 text-left font-weight-bold">
+                <textarea class="form-control col-9 pull-right" rows=5 name="body" required="required"></textarea><br/>
+            </div>
+        </div>
+        <div class="form-group row justify-content-center">
+            <input class="btn btn-warning col-2" type="submit" value="Submit"/>
+        </div>
+    </div>
+</form>
